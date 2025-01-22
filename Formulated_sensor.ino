@@ -50,13 +50,13 @@ const int httpsPort = 443;
 //----------------------------------------
 WiFiClientSecure client; //Create a WiFiClientSecure object.
 
-String GAS_ID = "AKfycbz_xrRSZwyxTIbXKWGAJZ68x2BfWskt8GZ7EiXwdSFUEPwjL_6cvYUh3eNZvRu0Vor5"; //Spreadsheet script ID
+String GAS_ID = ""; //Spreadsheet script ID
 
 void setup()
 {
   Serial.begin(115200);
   Serial.println("Initializing...");
-  WiFi.begin("Nirvan", "nirvan7606003");//wifi conncetion 
+  WiFi.begin("[Ssid]", "[wifi_password]");//wifi conncetion 
   
   //oled display
   u8g2.begin();
